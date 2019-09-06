@@ -26,6 +26,8 @@
 
   <link rel="stylesheet" href="css/style.css">
 
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg" />
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -108,8 +110,6 @@
             <div class="row mb-4">
               <div class="col-md-7">
                 <h1>Check Out Our Collection!</h1>
-                <p class="mb-5 lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea
-                  quo cupiditate facere deleniti fuga officia.</p>
                 <div>
                   <!-- <a href="#"
                     class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Shop
@@ -348,35 +348,35 @@
     </div> -->
 
 
-    <div class="site-section" id="about-section">
+    <!-- <div class="site-section" id="about-section">
       <div class="container">
         <div class="row align-items-lg-center">
           <div class="col-md-8 mb-5 mb-lg-0 position-relative">
             <img src="images/about_1.jpg" class="img-fluid" alt="Image">
             <div class="experience">
               <!-- <span class="year">Trusted Merchant</span>
-              <span class="caption">for 50 years</span> -->
+              <span class="caption">for 50 years</span>
             </div>
           </div>
           <div class="col-md-3 ml-auto">
-            <!-- <h3 class="section-sub-title">Merchant Company</h3> -->
+            <!-- <h3 class="section-sub-title">Merchant Company</h3> 
             <h2 class="section-title mb-3">About Us</h2>
             <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis
               nihil, consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci
               alias eius vero vel!</p>
-            <!-- <p><a href="#" class="btn btn-black btn-black--hover rounded-0">Learn More</a></p> -->
+            <!-- <p><a href="#" class="btn btn-black btn-black--hover rounded-0">Learn More</a></p> 
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
 
-    <div class="site-section border-bottom" id="team-section">
+    <!-- <div class="site-section border-bottom" id="team-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <!-- <h3 class="section-sub-title">Team</h3> -->
+            <!-- <h3 class="section-sub-title">Team</h3> 
             <h2 class="section-title mb-3">Team</h2>
           </div>
         </div>
@@ -428,16 +428,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="site-blocks-cover overlay get-notification" id="special-section"
+    <!-- <div class="site-blocks-cover overlay get-notification" id="special-section"
       style="background-image: url(images/hero_2.jpg); background-attachment: fixed; background-position: top;"
       data-aos="fade">
       <div class="container">
 
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center">
-            <!-- <h3 class="section-sub-title">Special Promo</h3> -->
+            <!-- <h3 class="section-sub-title">Special Promo</h3>
             <h3 class="section-title text-white mb-4">Summer Sale</h3>
             <p class="mb-5 lead">Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut
               consequatur laboriosam ipsam.</p>
@@ -451,7 +451,7 @@
         </div>
 
       </div>
-    </div>
+    </div> -->
 
     <!-- <div class="site-section bg-light" id="services-section">
       <div class="container">
@@ -653,50 +653,78 @@
         <div class="row justify-content-center">
           <div class="col-md-7 mb-5">
 
-
-
-            <form action="#" class="p-5 bg-white">
-
-              <!-- <h2 class="h4 text-black mb-5">Contact Form</h2> -->
+            <form action="orderform.php" method="post" class="p-5 bg-white">
 
               <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control rounded-0">
-                </div>
-                <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control rounded-0">
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label class="text-black" for="name">Name</label>
+                  <input type="text" id="name" class="form-control rounded-0">
                 </div>
               </div>
 
               <div class="row form-group">
-
-                <div class="col-md-12">
+                <div class="col-md-12 mb-3 mb-md-0">
                   <label class="text-black" for="email">Email</label>
                   <input type="email" id="email" class="form-control rounded-0">
                 </div>
               </div>
 
               <div class="row form-group">
-
-                <div class="col-md-12">
-                  <label class="text-black" for="subject">Subject</label>
-                  <input type="subject" id="subject" class="form-control rounded-0">
+                <div class="col-md-12 mb-3 mb-md-0">
+                  <label class="text-black" for="address">Address</label>
+                  <input type="text" id="address" class="form-control rounded-0">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="text-black" for="message">Message</label>
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control rounded-0"
-                    placeholder="Write your notes or questions here..."></textarea>
+                  <label class="text-black" for="contact_number">Contact Number </label>
+                  <input type="text" id="contact_number" class="form-control rounded-0">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-black rounded-0 py-3 px-4">
+                  <label class="text-black" for="mop">Method of Payment</label>
+                  <br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="methodOfPayment" id="inlineRadio1"
+                      value="option1">
+                    <label class="form-check-label" for="inlineRadio1">BDO</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="methodOfPayment" id="inlineRadio1"
+                      value="option1">
+                    <label class="form-check-label" for="inlineRadio1">BPI</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="methodOfPayment" id="inlineRadio1"
+                      value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Palawan</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="methodOfPayment" id="inlineRadio1"
+                      value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Cebuana</label>
+                  </div>
+
+                  <!-- <input type="subject" id="subject" class="form-control rounded-0"> -->
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="message">Order</label>
+                  <textarea name="order" id="order" cols="30" rows="5" class="form-control rounded-0"
+                    placeholder="Write your order here..."></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <button class="btn btn-black rounded-0 py-3 px-4" type="submit" name="submit">
+                    Order
+                  </button>
                 </div>
               </div>
 
@@ -715,18 +743,16 @@
         <div class="row">
           <div class="col-md-8">
             <div class="row">
-              <div class="col-md-5">
+              <!-- <div class="col-md-5">
                 <h2 class="footer-heading mb-4">About Us</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum
                   autem. Amet aliquid nesciunt veritatis aliquam.</p>
-              </div>
+              </div> -->
               <div class="col-md-3 ">
                 <h2 class="footer-heading mb-4">Quick Links</h2>
                 <ul class="list-unstyled">
                   <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
                   <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
                 </ul>
               </div>
               <div class="col-md-4">
