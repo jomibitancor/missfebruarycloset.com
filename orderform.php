@@ -14,5 +14,4 @@
         $txt = "Order ".$name.".\n\n".$email.".\n\n".$address.".\n\n".$contact_number.".\n\n".$methodOfPayment.".\n\n";
 
         mail($mailTo, $subject, $txt, $headers);
-        header("Location: index.php?mailsend");
     }
