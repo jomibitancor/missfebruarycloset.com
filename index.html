@@ -658,29 +658,29 @@
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="name">Name</label>
-                  <input type="text" id="name" class="form-control rounded-0">
+                  <label class="text-black" for="name">Full Name</label>
+                  <input type="text" id="name" name="Name" class="form-control rounded-0">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="text-black" for="email">Email</label>
-                  <input type="email" id="email" class="form-control rounded-0">
+                  <input type="email" id="email" name="Email" class="form-control rounded-0">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="text-black" for="address">Address</label>
-                  <input type="text" id="address" class="form-control rounded-0">
+                  <input type="text" id="address" name="Address" class="form-control rounded-0">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-black" for="contact_number">Contact Number </label>
-                  <input type="text" id="contact_number" class="form-control rounded-0">
+                  <input type="text" id="contact_number" name="Contact Number" class="form-control rounded-0">
                 </div>
               </div>
 
@@ -688,35 +688,21 @@
                 <div class="col-md-12">
                   <label class="text-black" for="mop">Method of Payment</label>
                   <br>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="methodOfPayment" id="inlineRadio1"
-                      value="option1">
-                    <label class="form-check-label" for="inlineRadio1">BDO</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="methodOfPayment" id="inlineRadio1"
-                      value="option1">
-                    <label class="form-check-label" for="inlineRadio1">BPI</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="methodOfPayment" id="inlineRadio1"
-                      value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Palawan</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="methodOfPayment" id="inlineRadio1"
-                      value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Cebuana</label>
-                  </div>
+                  <select name="Method of Payment" id="Method of Payment" required="">
+                    <option value="Choose" selected="" disabled="">Choose</option>
+                    <option value="BDO">BDO</option>
+                    <option value="Palawan">Palawan</option>
+                    <option value="BPI">BPI</option>
+                    <option value="Cebuana">Cebuana</option>
+                  </select>
 
-                  <!-- <input type="subject" id="subject" class="form-control rounded-0"> -->
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-black" for="message">Order</label>
-                  <textarea name="order" id="order" cols="30" rows="5" class="form-control rounded-0"
+                  <textarea name="Order" id="order" cols="30" rows="5" class="form-control rounded-0"
                     placeholder="Write your order here..."></textarea>
                 </div>
               </div>
