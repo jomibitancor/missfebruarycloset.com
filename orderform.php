@@ -6,12 +6,15 @@
         $address = $_POST['address'];
         $contact_number = $_POST['contact_number'];
         $methodOfPayment = $_POST['methodOfPayment'];
+
         $subject = "New Order from missfebruarycloset.com";
-
-
         $mailTo = "bitancor@ualberta.ca";
         $headers = "From: ".$email;
-        $txt = "Order ".$name.".\n\n".$email.".\n\n".$address.".\n\n".$contact_number.".\n\n".$methodOfPayment.".\n\n";
+        $email_body = "Name: $name.\n".
+                      "Email: $email.\n".
+                      "Address: $address.\n".
+                      "Contact Number: $contact_number.\n".
+                      "Method of Payment: $methodOfPayment.\n".
 
-        mail($mailTo, $subject, $txt, $headers);
+        mail($mailTo, $subject, $email_body, $headers);
     }
