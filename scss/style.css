@@ -2271,6 +2271,7 @@ h1, h2, h3, h4, h5,
 .product-item figure {
   overflow: hidden;
   position: relative;
+  height: 400px;
   margin-bottom: 30px;
 }
 
@@ -2292,6 +2293,7 @@ h1, h2, h3, h4, h5,
 }
 
 .product-item figure img {
+  height: 100%;
   -webkit-transition: .3s all ease;
   transition: .3s all ease;
   -webkit-transform: scale(1);
